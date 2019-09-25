@@ -1,0 +1,18 @@
+﻿1、导入实例
+type cypher\load.cypher | cypher-shell.bat -u neo4j -p 1234
+cat cypher\load.cypher | cypher-shell.bat -u neo4j -p 1234
+
+2、导入概念
+type cypher\create_onto.cypher | cypher-shell.bat -u neo4j -p 1234
+cat cypher\create_onto.cypher | cypher-shell.bat -u neo4j -p 1234
+
+3、导入实例和概念之间的关系
+type cypher\instance_of.cypher | cypher-shell.bat -u neo4j -p 1234
+cat cypher\instance_of.cypher | cypher-shell.bat -u neo4j -p 1234
+
+4、导入概念之间的关系
+type cypher\similar_concept.cypher | cypher-shell.bat -u neo4j -p 1234
+cat cypher\similar_concept.cypher | cypher-shell.bat -u neo4j -p 1234
+cat用power shell导入后乱码，type在cmd下导入成功,ANSI编码
+
+4个文件的结尾必须有分号
