@@ -43,7 +43,7 @@ def run():
     cypher = """
     MATCH p=()-[r:SIMILAR_CONCEPT]->() 
 WHERE r.num_of_same_field > 10
-RETURN p
+RETURN collect(p)
     """
     http_post_test2(cypher)
 
